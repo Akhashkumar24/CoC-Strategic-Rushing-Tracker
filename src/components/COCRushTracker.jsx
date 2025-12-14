@@ -471,7 +471,7 @@ const COCRushTracker = () => {
                           {name} ({allLevels.length} total)
                         </div>
                         <div className={`font-bold ${completedCount === allLevels.length ? 'text-green-400' : 'text-yellow-400'}`}>
-                          {completedCount}/{allLevels.length} at {actualTarget}+
+                          {completedCount}/{allLevels.length} at {actualTarget}
                         </div>
                       </div>
                       <div className="grid grid-cols-4 gap-2">

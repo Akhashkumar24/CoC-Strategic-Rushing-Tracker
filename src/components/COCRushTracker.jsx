@@ -32,7 +32,8 @@ const COCRushTracker = () => {
   const customMaxLevels = {
     1000006: 9,   // Barracks max level 9
     1000070: 7,   // Blacksmith max level 7
-    1000020: 5    // Spell Factory max level 5
+    1000020: 5,   // Spell Factory max level 5
+    1000071: 7    // Hero hall max level 7
   };
 
   // Buildings that should track ALL instances (not just top 4)

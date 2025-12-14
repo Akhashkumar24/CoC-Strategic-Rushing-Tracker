@@ -2,13 +2,12 @@
 
 A React-based tracker for Clash of Clans strategic rushing progress from TH8 to TH18.
 
-## Features
-
-- Track building upgrades (Clan Castle, Army Camps, Storages, Defenses, etc.)
-- Monitor laboratory research progress (Dragons, Balloons, Spells)
-- Top 4 highest level tracking for Archer Towers and Cannons
-- Visual progress bars and completion indicators
-- Support for TH8 through TH18
+## What's Tracked:
+• Single Buildings: Clan Castle, Laboratory, Pet House, Hero Hall, Eagle Artillery
+• ALL Instances: Gold Storage, Elixir Storage, Dark Elixir Storage, Army Camps
+• Top 4 Defenses: Archer Towers and Cannons (capped at level 21)
+• Capped Buildings: Barracks (max 9), Blacksmith (max 7), Spell Factory (max 5)
+• Lab: Dragon, Balloon, Clone Spell, Rage Spell
 
 ## Installation
 
@@ -33,16 +32,3 @@ A React-based tracker for Clash of Clans strategic rushing progress from TH8 to 
 1. Paste your account JSON data into the text area
 2. The tracker will automatically detect your Town Hall level
 3. View your progress across all tracked buildings and lab upgrades
-
-## JSON Format
-
-Your JSON should contain:
-- `tag`: Player tag
-- `buildings`: Array of building objects with `data` (ID) and `lvl` (level)
-- `units`: Array of unit objects
-- `spells`: Array of spell objects
-
-## Bug Fixes
-
-### Version 1.1.0
-- **Fixed**: Top 4 Archer Tower and Cannon logic now correctly displays all 4 slots even when all levels are identical (e.g., 17,17,17,17,17,17,17 now shows 17/21, 17/21, 17/21, 17/21 instead of 17/21, 17/21, 0/21, 0/21)
